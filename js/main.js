@@ -38,4 +38,22 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
   }
+
+  // Bouton "retour en haut" : apparaît après un peu de défilement
+  const backToTopBtn = document.getElementById("back-to-top");
+  if (backToTopBtn) {
+    const toggleBackToTop = () => {
+      const visible = window.scrollY > 400;
+      backToTopBtn.classList.toggle("opacity-0", !visible);
+      backToTopBtn.classList.toggle("pointer-events-none", !visible);
+      backToTopBtn.classList.toggle("translate-y-4", !visible);
+    };
+
+    toggleBackToTop();
+    window.addEventListener("scroll", toggleBackToTop, { passive: true });
+
+    backToTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
 });
