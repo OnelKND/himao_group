@@ -1,0 +1,444 @@
+<!doctype html>
+<html lang="fr" data-theme="himaotheme">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diagnostic maturité numérique : où en est votre transformation digitale ? | HIMAO Group</title>
+  <meta name="description"
+    content="Évaluez en 2 minutes la maturité numérique de votre entreprise et recevez des recommandations personnalisées de HIMAO Group." />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="/css/output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://kit.fontawesome.com/27290c1c94.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Diagnostic maturité numérique | HIMAO Group" />
+  <meta property="og:description" content="Évaluez en 2 minutes la maturité numérique de votre entreprise." />
+  <meta property="og:image" content="https://himaogroup.netlify.app/assets/images/og-cover.jpg" />
+  <meta property="og:url" content="https://himaogroup.netlify.app/diagnostic-numerique.html" />
+  <meta property="og:locale" content="fr_FR" />
+</head>
+
+<body class="bg-base-100 text-himao-dark">
+
+  <header
+    class="navbar sticky top-0 z-50 bg-base-100/50 backdrop-blur-md border-b border-himao-gold/30 px-4 md:px-8 shadow-sm">
+    <div class="grid grid-cols-3 items-center w-full lg:flex lg:justify-between">
+      <div class="flex justify-start lg:hidden">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost" aria-label="Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </label>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] w-52 rounded-box bg-base-100 p-2 shadow-xl border border-himao-gold/20">
+            <li><a href="index.html" data-nav-link
+                class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Accueil</a>
+            </li>
+            <li><a href="a-propos.html" data-nav-link
+                class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">À propos</a>
+            </li>
+            <li><a href="services.html" data-nav-link
+                class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Services</a>
+            </li>
+            <li><a href="equipe.html" data-nav-link
+                class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Équipe</a>
+            </li>
+            <li><a href="services.html#outils" data-nav-link
+                class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Outils</a>
+            </li>
+            <li><a href="contact.html" data-nav-link
+                class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a href="index.html" class="flex items-center justify-center gap-2 lg:justify-start lg:pl-2">
+        <img src="/assets/images/logo.png" alt="HIMAO Group" class="h-20 w-auto" />
+        <span class="text-xl font-bold text-himao-navy hidden sm:inline">
+          HIMAO <span class="text-himao-gold">Group</span>
+        </span>
+      </a>
+      <div class="lg:hidden" aria-hidden="true"></div>
+      <div class="hidden lg:flex">
+        <ul class="menu menu-horizontal gap-1 px-1">
+          <li><a href="index.html" data-nav-link
+              class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Accueil</a></li>
+          <li><a href="a-propos.html" data-nav-link
+              class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">À propos</a></li>
+          <li><a href="services.html" data-nav-link
+              class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Services</a></li>
+          <li><a href="equipe.html" data-nav-link
+              class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Équipe</a></li>
+          <li><a href="services.html#outils" data-nav-link
+              class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Outils</a></li>
+          <li><a href="contact.html"
+              class="btn btn-primary btn-sm rounded-full px-6 font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="px-4 py-16 md:py-20 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-base-200 via-base-100 to-base-200/50"></div>
+      <div class="absolute top-10 right-10 w-32 h-32 bg-himao-gold/10 rounded-full blur-2xl"></div>
+      <div class="absolute bottom-10 left-10 w-24 h-24 bg-himao-navy/5 rounded-full blur-2xl"></div>
+
+      <div class="mx-auto max-w-3xl relative z-10">
+        <div class="text-center mb-12">
+          <div class="badge badge-lg bg-secondary/20 text-secondary border-none mb-4 px-4 gap-2">
+            <i class="fa-solid fa-network-wired"></i>
+            Outil gratuit
+          </div>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-himao-navy mb-4">Où en est votre transformation
+            numérique ?</h1>
+          <p class="mx-auto max-w-2xl text-himao-dark/70">8 questions, 2 minutes. Obtenez un score de maturité
+            numérique et des recommandations concrètes pour la suite.</p>
+        </div>
+
+        <!-- Quiz -->
+        <form id="digital-quiz-form" class="space-y-6">
+
+          <fieldset class="card bg-base-100 shadow-md border border-base-200" data-question>
+            <div class="card-body">
+              <legend class="mb-3 font-semibold text-himao-navy">1. Votre entreprise a-t-elle une présence en ligne
+                active (site web, réseaux sociaux) ?</legend>
+              <div class="grid gap-2">
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q1" value="3" class="radio radio-primary radio-sm" required />
+                  <span class="text-sm">Oui, régulièrement mise à jour</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q1" value="1" class="radio radio-primary radio-sm" />
+                  <span class="text-sm">Oui, mais peu active</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q1" value="0" class="radio radio-primary radio-sm" />
+                  <span class="text-sm">Non, aucune présence en ligne</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="card bg-base-100 shadow-md border border-base-200" data-question>
+            <div class="card-body">
+              <legend class="mb-3 font-semibold text-himao-navy">2. Utilisez-vous des outils numériques pour la
+                gestion (facturation, comptabilité, CRM) ?</legend>
+              <div class="grid gap-2">
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q2" value="3" class="radio radio-primary radio-sm" required />
+                  <span class="text-sm">Oui, la plupart sont digitalisés</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q2" value="1" class="radio radio-primary radio-sm" />
+                  <span class="text-sm">Certains seulement</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q2" value="0" class="radio radio-primary radio-sm" />
+                  <span class="text-sm">Non, tout est manuel/papier</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="card bg-base-100 shadow-md border border-base-200" data-question>
+            <div class="card-body">
+              <legend class="mb-3 font-semibold text-himao-navy">3. Vos données sont-elles sauvegardées régulièrement
+                (cloud ou support externe) ?</legend>
+              <div class="grid gap-2">
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q3" value="3" class="radio radio-primary radio-sm" required />
+                  <span class="text-sm">Oui, sauvegardes automatiques</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q3" value="1" class="radio radio-primary radio-sm" />
+                  <span class="text-sm">Sauvegardes occasionnelles</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q3" value="0" class="radio radio-primary radio-sm" />
+                  <span class="text-sm">Non, aucune sauvegarde</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="card bg-base-100 shadow-md border border-base-200" data-question>
+            <div class="card-body">
+              <legend class="mb-3 font-semibold text-himao-navy">4. Votre équipe applique-t-elle des règles de
+                sécurité informatique de base (mots de passe, antivirus, accès) ?</legend>
+              <div class="grid gap-2">
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q4" value="3" class="radio radio-primary radio-sm" required />
+                  <span class="text-sm">Oui, des règles claires sont appliquées</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q4" value="1" class="radio radio-primary radio-sm" />
+                  <span class="text-sm">Partiellement</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q4" value="0" class="radio radio-primary radio-sm" />
+                  <span class="text-sm">Non, aucune règle particulière</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="card bg-base-100 shadow-md border border-base-200" data-question>
+            <div class="card-body">
+              <legend class="mb-3 font-semibold text-himao-navy">5. Votre connexion/infrastructure réseau est-elle
+                fiable et adaptée à vos besoins ?</legend>
+              <div class="grid gap-2">
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q5" value="3" class="radio radio-primary radio-sm" required />
+                  <span class="text-sm">Oui, stable et dimensionnée</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q5" value="2" class="radio radio-primary radio-sm" />
+                  <span class="text-sm">Correcte mais avec des limites</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q5" value="0" class="radio radio-primary radio-sm" />
+                  <span class="text-sm">Non, souvent défaillante</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="card bg-base-100 shadow-md border border-base-200" data-question>
+            <div class="card-body">
+              <legend class="mb-3 font-semibold text-himao-navy">6. Votre équipe est-elle à l'aise avec les outils
+                numériques du quotidien ?</legend>
+              <div class="grid gap-2">
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q6" value="3" class="radio radio-primary radio-sm" required />
+                  <span class="text-sm">Oui, bon niveau général</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q6" value="1" class="radio radio-primary radio-sm" />
+                  <span class="text-sm">Niveau hétérogène</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q6" value="0" class="radio radio-primary radio-sm" />
+                  <span class="text-sm">Non, difficultés fréquentes</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="card bg-base-100 shadow-md border border-base-200" data-question>
+            <div class="card-body">
+              <legend class="mb-3 font-semibold text-himao-navy">7. Utilisez-vous des données/statistiques pour
+                prendre des décisions (ventes, trafic, performance) ?</legend>
+              <div class="grid gap-2">
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q7" value="3" class="radio radio-primary radio-sm" required />
+                  <span class="text-sm">Oui, régulièrement</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q7" value="1" class="radio radio-primary radio-sm" />
+                  <span class="text-sm">Rarement</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q7" value="0" class="radio radio-primary radio-sm" />
+                  <span class="text-sm">Jamais</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="card bg-base-100 shadow-md border border-base-200" data-question>
+            <div class="card-body">
+              <legend class="mb-3 font-semibold text-himao-navy">8. Avez-vous une stratégie ou un budget dédié à la
+                transformation numérique ?</legend>
+              <div class="grid gap-2">
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q8" value="3" class="radio radio-primary radio-sm" required />
+                  <span class="text-sm">Oui, formalisée</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q8" value="1" class="radio radio-primary radio-sm" />
+                  <span class="text-sm">En réflexion</span>
+                </label>
+                <label
+                  class="flex items-center gap-3 p-3 rounded-lg border border-base-300 cursor-pointer transition-colors has-[:checked]:border-primary has-[:checked]:bg-primary/5">
+                  <input type="radio" name="q8" value="0" class="radio radio-primary radio-sm" />
+                  <span class="text-sm">Non</span>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="text-center pt-4">
+            <button type="submit"
+              class="btn btn-primary btn-lg rounded-full px-10 shadow-lg hover:shadow-xl hover:scale-105 transition-all font-semibold">
+              Voir mon résultat
+              <i class="fa-solid fa-chart-simple ml-2"></i>
+            </button>
+          </div>
+        </form>
+
+        <!-- Résultat -->
+        <div id="digital-quiz-result" class="hidden text-center">
+          <div id="digital-quiz-radial"
+            class="radial-progress text-primary bg-base-200 border-4 border-base-200 mx-auto mb-6"
+            style="--value:0; --size:9rem; --thickness: 0.8rem;" role="progressbar">0%</div>
+          <h2 id="digital-quiz-title" class="text-2xl md:text-3xl font-bold text-himao-navy mb-3"></h2>
+          <p id="digital-quiz-text" class="max-w-xl mx-auto text-himao-dark/70 mb-8"></p>
+
+          <div class="card bg-base-200 max-w-xl mx-auto text-left mb-8">
+            <div class="card-body">
+              <h3 class="font-semibold text-himao-navy mb-2">Vos prochaines étapes recommandées</h3>
+              <ul id="digital-quiz-next-steps" class="list-disc list-inside space-y-1 text-sm text-himao-dark/80"></ul>
+            </div>
+          </div>
+
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="contact.html"
+              class="btn btn-primary rounded-full px-8 shadow-lg hover:shadow-xl hover:scale-105 transition-all font-semibold">
+              <i class="fa-solid fa-user-tie"></i>
+              Être accompagné par un expert
+            </a>
+            <button type="button" onclick="window.print()"
+              class="btn btn-ghost rounded-full px-6 text-himao-navy hover:bg-himao-light">
+              <i class="fa-solid fa-print"></i>
+              Imprimer / Enregistrer en PDF
+            </button>
+            <button type="button" id="digital-quiz-restart"
+              class="btn btn-outline border-himao-navy text-himao-navy hover:bg-himao-navy hover:text-white rounded-full px-8 transition-all">
+              <i class="fa-solid fa-rotate-right"></i>
+              Refaire le diagnostic
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-neutral text-white pt-16 pb-8">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <img src="/assets/images/logo2.png" alt="HIMAO Group" class="h-28 w-auto" />
+            <span class="text-lg font-bold">HIMAO <span class="text-secondary">Group</span></span>
+          </div>
+          <p class="text-white/70 text-sm">Notre expertise au service de votre croissance</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-4 text-secondary">Liens rapides</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-white/70 hover:text-secondary transition-colors">Accueil</a></li>
+            <li><a href="a-propos.html" class="text-white/70 hover:text-secondary transition-colors">À propos</a></li>
+            <li><a href="services.html" class="text-white/70 hover:text-secondary transition-colors">Services</a></li>
+            <li><a href="equipe.html" class="text-white/70 hover:text-secondary transition-colors">Équipe</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-4 text-secondary">Contact</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li>Cotonou, Bénin</li>
+            <li><a href="mailto:himaogroup@gmail.com" class="hover:text-secondary">himaogroup@gmail.com</a></li>
+            <li><a href="https://himaogroup.netlify.app" target="_blank"
+                class="hover:text-secondary">himaogroup.netlify.app</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-white/10 text-center">
+        <p class="text-xs text-white/50">© <span id="current-year"></span> HIMAO Group. Tous droits réservés.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button id="back-to-top" type="button" aria-label="Retour en haut de la page"
+    class="fixed bottom-6 right-6 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-lg opacity-0 translate-y-4 pointer-events-none transition-all duration-300 hover:bg-secondary hover:text-himao-navy hover:-translate-y-1">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+      stroke-width="2.5">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
+
+  <script src="/js/main.js"></script>
+  <script src="/js/diagnostic.js"></script>
+  <script>
+    initDiagnostic({
+      formId: "digital-quiz-form",
+      resultId: "digital-quiz-result",
+      radialId: "digital-quiz-radial",
+      scoreTitleId: "digital-quiz-title",
+      scoreTextId: "digital-quiz-text",
+      nextStepsId: "digital-quiz-next-steps",
+      restartId: "digital-quiz-restart",
+      maxScore: 24,
+      thresholds: [
+        {
+          min: 0,
+          max: 9,
+          label: "Digitalisation basique",
+          text: "Le numérique reste peu exploité dans votre organisation aujourd'hui. C'est aussi votre plus grande marge de progression rapide.",
+          next: [
+            "Digitaliser en priorité la facturation et la comptabilité",
+            "Mettre en place des sauvegardes automatiques de vos données",
+            "Vous faire accompagner sur un premier plan de transformation numérique",
+          ],
+        },
+        {
+          min: 10,
+          max: 17,
+          label: "En transition numérique",
+          text: "Des outils numériques sont déjà en place, mais de façon inégale. Structurer votre démarche vous fera gagner en efficacité et en sécurité.",
+          next: [
+            "Sécuriser vos accès et vos données (mots de passe, sauvegardes, antivirus)",
+            "Former votre équipe aux outils numériques utilisés",
+            "Mettre en place un tableau de bord simple pour suivre votre activité",
+          ],
+        },
+        {
+          min: 18,
+          max: 24,
+          label: "Digitalisé et outillé",
+          text: "Votre structure est bien avancée sur le plan numérique. L'enjeu est maintenant d'aller vers l'automatisation et l'exploitation avancée de vos données.",
+          next: [
+            "Automatiser certains processus répétitifs",
+            "Renforcer votre stratégie de cybersécurité",
+            "Exploiter davantage vos données pour piloter la croissance",
+          ],
+        },
+      ],
+    });
+  </script>
+</body>
+
+</html>

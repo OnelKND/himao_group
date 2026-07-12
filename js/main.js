@@ -20,12 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
   if (contactForm) {
     contactForm.addEventListener("submit", (e) => {
       e.preventDefault();
+      // FormData brut (pas d'encodage URL) pour que la pièce jointe PDF soit
+      // transmise correctement : le navigateur fixe lui-même le Content-Type
+      // multipart/form-data avec la bonne boundary.
       const formData = new FormData(contactForm);
 
       fetch("/", {
         method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData).toString(),
+        body: formData,
       })
         .then(() => {
           contactForm.reset();

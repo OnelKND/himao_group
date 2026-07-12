@@ -240,3 +240,12 @@ select:focus {
 .btn-glow:hover::before {
   opacity: 0.4;
 }
+
+/* Impression des résultats de diagnostic : on ne garde que le contenu */
+@media print {
+  header,
+  footer,
+  #back-to-top {
+    display: none !important;
+  }
+}

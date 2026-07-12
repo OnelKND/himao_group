@@ -57,6 +57,9 @@
             <li><a href="equipe.html" data-nav-link
                 class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Équipe</a>
             </li>
+            <li><a href="services.html#outils" data-nav-link
+                class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Outils</a>
+            </li>
             <li><a href="contact.html" data-nav-link
                 class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Contact</a>
             </li>
@@ -80,6 +83,8 @@
               class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Services</a></li>
           <li><a href="equipe.html" data-nav-link
               class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Équipe</a></li>
+          <li><a href="services.html#outils" data-nav-link
+              class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Outils</a></li>
           <li><a href="contact.html"
               class="btn btn-primary btn-sm rounded-full px-6 font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all">Contact</a>
           </li>
@@ -197,8 +202,8 @@
                 - data-netlify="true" active la capture côté Netlify
                 - le champ caché "bot-field" est un honeypot anti-spam
               -->
-              <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" class="space-y-4"
-                id="contact-form">
+              <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
+                enctype="multipart/form-data" class="space-y-4" id="contact-form">
                 <input type="hidden" name="form-name" value="contact" />
 
                 <p class="hidden">
@@ -232,6 +237,20 @@
                   <textarea name="message" rows="5" required
                     class="textarea textarea-bordered focus:border-secondary focus:ring-2 focus:ring-secondary/20"
                     placeholder="Décrivez votre projet ou posez votre question..."></textarea>
+                </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-medium">Résultat d'un diagnostic (optionnel)</span>
+                  </label>
+                  <input type="file" name="resultat_diagnostic" accept="application/pdf"
+                    class="file-input file-input-bordered focus:border-secondary focus:ring-2 focus:ring-secondary/20" />
+                  <label class="label">
+                    <span class="label-text-alt text-himao-dark/60">
+                      Si vous avez fait un de nos diagnostics gratuits, joignez ici le PDF téléchargé/imprimé de
+                      votre résultat.
+                    </span>
+                  </label>
                 </div>
 
                 <button type="submit" class="btn btn-primary w-full rounded-xl">
