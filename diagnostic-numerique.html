@@ -313,8 +313,9 @@
         <!-- Résultat -->
         <div id="digital-quiz-result" class="hidden text-center">
           <div id="digital-quiz-radial"
-            class="radial-progress text-primary bg-base-200 border-4 border-base-200 mx-auto mb-6"
+            class="radial-progress text-primary bg-base-200 border-4 border-base-200 mx-auto mb-6 print:hidden"
             style="--value:0; --size:9rem; --thickness: 0.8rem;" role="progressbar">0%</div>
+          <p id="digital-quiz-score-print" class="hidden print:block text-2xl font-bold text-himao-navy mb-6"></p>
           <h2 id="digital-quiz-title" class="text-2xl md:text-3xl font-bold text-himao-navy mb-3"></h2>
           <p id="digital-quiz-text" class="max-w-xl mx-auto text-himao-dark/70 mb-8"></p>
 
@@ -397,6 +398,7 @@
       formId: "digital-quiz-form",
       resultId: "digital-quiz-result",
       radialId: "digital-quiz-radial",
+      scorePrintId: "digital-quiz-score-print",
       scoreTitleId: "digital-quiz-title",
       scoreTextId: "digital-quiz-text",
       nextStepsId: "digital-quiz-next-steps",

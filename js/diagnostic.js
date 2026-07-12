@@ -24,6 +24,11 @@ function initDiagnostic(config) {
       radial.textContent = percent + "%";
     }
 
+    // La jauge circulaire (mask + conic-gradient CSS) ne s'imprime pas de
+    // façon fiable : on affiche un score texte à la place à l'impression.
+    const scorePrintEl = document.getElementById(config.scorePrintId);
+    if (scorePrintEl) scorePrintEl.textContent = "Score : " + percent + "%";
+
     const titleEl = document.getElementById(config.scoreTitleId);
     if (titleEl) titleEl.textContent = tier.label;
 

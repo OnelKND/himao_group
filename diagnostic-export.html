@@ -316,8 +316,10 @@
 
         <!-- Résultat -->
         <div id="export-quiz-result" class="hidden text-center">
-          <div id="export-quiz-radial" class="radial-progress text-primary bg-base-200 border-4 border-base-200 mx-auto mb-6"
+          <div id="export-quiz-radial"
+            class="radial-progress text-primary bg-base-200 border-4 border-base-200 mx-auto mb-6 print:hidden"
             style="--value:0; --size:9rem; --thickness: 0.8rem;" role="progressbar">0%</div>
+          <p id="export-quiz-score-print" class="hidden print:block text-2xl font-bold text-himao-navy mb-6"></p>
           <h2 id="export-quiz-title" class="text-2xl md:text-3xl font-bold text-himao-navy mb-3"></h2>
           <p id="export-quiz-text" class="max-w-xl mx-auto text-himao-dark/70 mb-8"></p>
 
@@ -400,6 +402,7 @@
       formId: "export-quiz-form",
       resultId: "export-quiz-result",
       radialId: "export-quiz-radial",
+      scorePrintId: "export-quiz-score-print",
       scoreTitleId: "export-quiz-title",
       scoreTextId: "export-quiz-text",
       nextStepsId: "export-quiz-next-steps",
