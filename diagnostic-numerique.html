@@ -326,6 +326,27 @@
             </div>
           </div>
 
+          <div class="card bg-secondary/5 border border-secondary/20 max-w-xl mx-auto text-left mb-8 print:hidden">
+            <div class="card-body">
+              <h3 class="font-semibold text-himao-navy mb-1">Envie d'un avis d'expert sur ce résultat ?</h3>
+              <p class="text-sm text-himao-dark/70 mb-3">Laissez votre email, un membre de notre équipe vous
+                recontacte avec des conseils personnalisés.</p>
+              <form name="diagnostic-digital-lead" method="POST" data-netlify="true"
+                class="flex flex-col sm:flex-row gap-2" id="digital-quiz-lead-form">
+                <input type="hidden" name="form-name" value="diagnostic-digital-lead" />
+                <input type="hidden" name="diagnostic" value="Maturité numérique" />
+                <input type="hidden" name="resultat" id="digital-quiz-lead-score" />
+                <input type="email" name="email" required placeholder="votre@email.com"
+                  class="input input-bordered flex-1 focus:border-secondary focus:ring-2 focus:ring-secondary/20" />
+                <button type="submit" class="btn btn-secondary whitespace-nowrap">Être recontacté</button>
+              </form>
+              <p id="digital-quiz-lead-success" class="hidden text-sm text-success mt-2">
+                <i class="fa-solid fa-circle-check"></i>
+                Merci ! Un membre de notre équipe vous recontactera rapidement.
+              </p>
+            </div>
+          </div>
+
           <div class="flex flex-wrap justify-center gap-4">
             <a href="contact.html"
               class="btn btn-primary rounded-full px-8 shadow-lg hover:shadow-xl hover:scale-105 transition-all font-semibold">
@@ -365,6 +386,7 @@
             <li><a href="a-propos.html" class="text-white/70 hover:text-secondary transition-colors">À propos</a></li>
             <li><a href="services.html" class="text-white/70 hover:text-secondary transition-colors">Services</a></li>
             <li><a href="equipe.html" class="text-white/70 hover:text-secondary transition-colors">Équipe</a></li>
+            <li><a href="blog.html" class="text-white/70 hover:text-secondary transition-colors">Blog</a></li>
           </ul>
         </div>
         <div>
@@ -379,9 +401,21 @@
       </div>
       <div class="pt-8 border-t border-white/10 text-center">
         <p class="text-xs text-white/50">© <span id="current-year"></span> HIMAO Group. Tous droits réservés.</p>
+        <p class="text-xs text-white/40 mt-2">
+          <a href="mentions-legales.html" class="hover:text-secondary transition-colors">Mentions légales</a>
+          ·
+          <a href="politique-confidentialite.html" class="hover:text-secondary transition-colors">Politique de
+            confidentialité</a>
+        </p>
       </div>
     </div>
   </footer>
+
+  <a href="https://wa.me/2290168266565?text=Bonjour%20HIMAO%20Group%2C%20je%20souhaite%20avoir%20plus%20d%27informations."
+    target="_blank" rel="noopener" aria-label="Contactez-nous sur WhatsApp"
+    class="fixed bottom-6 left-6 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-all duration-300 hover:scale-110 hover:shadow-xl">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+  </a>
 
   <button id="back-to-top" type="button" aria-label="Retour en haut de la page"
     class="fixed bottom-6 right-6 z-40 flex h-12 w-12 items-center justify-center rounded-full bg-primary text-white shadow-lg opacity-0 translate-y-4 pointer-events-none transition-all duration-300 hover:bg-secondary hover:text-himao-navy hover:-translate-y-1">
@@ -403,6 +437,9 @@
       scoreTextId: "digital-quiz-text",
       nextStepsId: "digital-quiz-next-steps",
       restartId: "digital-quiz-restart",
+      leadFormId: "digital-quiz-lead-form",
+      leadSuccessId: "digital-quiz-lead-success",
+      leadScoreFieldId: "digital-quiz-lead-score",
       maxScore: 24,
       thresholds: [
         {
@@ -440,6 +477,7 @@
         },
       ],
     });
+    initDiagnosticLeadForm("digital-quiz-lead-form", "digital-quiz-lead-success");
   </script>
 </body>
 

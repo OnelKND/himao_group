@@ -20,4 +20,32 @@
     <loc>https://himaogroup.netlify.app/contact.html</loc>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://himaogroup.netlify.app/diagnostic-export.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://himaogroup.netlify.app/diagnostic-gestion-projet.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://himaogroup.netlify.app/diagnostic-numerique.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://himaogroup.netlify.app/mentions-legales.html</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://himaogroup.netlify.app/politique-confidentialite.html</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://himaogroup.netlify.app/blog.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://himaogroup.netlify.app/blog-erreurs-export-pme.html</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>

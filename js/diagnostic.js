@@ -45,6 +45,11 @@ function initDiagnostic(config) {
       });
     }
 
+    // Renseigne les champs cachés du formulaire de contact-après-résultat,
+    // pour que l'équipe HIMAO voie le score du visiteur dans sa notification.
+    const leadScoreEl = document.getElementById(config.leadScoreFieldId);
+    if (leadScoreEl) leadScoreEl.value = percent + "% — " + tier.label;
+
     form.classList.add("hidden");
     resultSection.classList.remove("hidden");
     resultSection.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -57,6 +62,36 @@ function initDiagnostic(config) {
       resultSection.classList.add("hidden");
       form.classList.remove("hidden");
       form.scrollIntoView({ behavior: "smooth", block: "start" });
+
+      const leadForm = document.getElementById(config.leadFormId);
+      const leadSuccess = document.getElementById(config.leadSuccessId);
+      if (leadForm) leadForm.classList.remove("hidden");
+      if (leadSuccess) leadSuccess.classList.add("hidden");
     });
   }
+}
+
+// Formulaire "laissez votre email" affiché à côté du résultat d'un diagnostic.
+// Soumis via Netlify Forms (comme le formulaire de contact) : ça n'envoie pas
+// automatiquement un email au visiteur, ça notifie l'équipe HIMAO pour un
+// recontact manuel avec le score joint.
+function initDiagnosticLeadForm(formId, successId) {
+  const form = document.getElementById(formId);
+  const success = document.getElementById(successId);
+  if (!form) return;
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+
+    fetch("/", { method: "POST", body: formData })
+      .then(() => {
+        form.reset();
+        form.classList.add("hidden");
+        if (success) success.classList.remove("hidden");
+      })
+      .catch(() => {
+        alert("Une erreur est survenue. Merci de réessayer ou de nous écrire directement à himaogroup@gmail.com.");
+      });
+  });
 }
