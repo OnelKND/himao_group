@@ -30,53 +30,56 @@
 
   <header
     class="navbar sticky top-0 z-50 bg-base-100/95 backdrop-blur-md border-b border-himao-gold/30 px-4 md:px-8 shadow-sm">
-    <div class="navbar-start">
-      <div class="dropdown">
-        <label tabindex="0" class="btn btn-ghost lg:hidden" aria-label="Menu">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </label>
-        <ul tabindex="0"
-          class="menu menu-sm dropdown-content mt-3 z-[1] w-52 rounded-box bg-base-100 p-2 shadow-xl border border-himao-gold/20">
-          <li><a href="index.html" data-nav-link
-              class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Accueil</a>
-          </li>
-          <li><a href="a-propos.html" data-nav-link
-              class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">À propos</a>
-          </li>
-          <li><a href="services.html" data-nav-link
-              class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Services</a>
-          </li>
-          <li><a href="equipe.html" data-nav-link
-              class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Équipe</a>
-          </li>
-          <li><a href="contact.html" data-nav-link
-              class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Contact</a>
-          </li>
-        </ul>
+    <div class="grid grid-cols-3 items-center w-full lg:flex lg:justify-between">
+      <div class="flex justify-start lg:hidden">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost" aria-label="Menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </label>
+          <ul tabindex="0"
+            class="menu menu-sm dropdown-content mt-3 z-[1] w-52 rounded-box bg-base-100 p-2 shadow-xl border border-himao-gold/20">
+            <li><a href="index.html" data-nav-link
+                class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Accueil</a>
+            </li>
+            <li><a href="a-propos.html" data-nav-link
+                class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">À propos</a>
+            </li>
+            <li><a href="services.html" data-nav-link
+                class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Services</a>
+            </li>
+            <li><a href="equipe.html" data-nav-link
+                class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Équipe</a>
+            </li>
+            <li><a href="contact.html" data-nav-link
+                class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <a href="index.html" class="flex items-center gap-2 pl-2">
+      <a href="index.html" class="flex items-center justify-center gap-2 lg:justify-start lg:pl-2">
         <img src="/assets/images/logo.png" alt="HIMAO Group" class="h-24 w-auto" />
         <span class="text-xl font-bold text-himao-navy hidden sm:inline">
           HIMAO <span class="text-himao-gold">Group</span>
         </span>
       </a>
-    </div>
-    <div class="navbar-end hidden lg:flex">
-      <ul class="menu menu-horizontal gap-1 px-1">
-        <li><a href="index.html" data-nav-link
-            class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Accueil</a></li>
-        <li><a href="a-propos.html" data-nav-link
-            class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">À propos</a></li>
-        <li><a href="services.html" data-nav-link
-            class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Services</a></li>
-        <li><a href="equipe.html" data-nav-link
-            class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Équipe</a></li>
-        <li><a href="contact.html"
-            class="btn btn-primary btn-sm rounded-full px-6 font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all">Contact</a>
-        </li>
-      </ul>
+      <div class="lg:hidden" aria-hidden="true"></div>
+      <div class="hidden lg:flex">
+        <ul class="menu menu-horizontal gap-1 px-1">
+          <li><a href="index.html" data-nav-link
+              class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Accueil</a></li>
+          <li><a href="a-propos.html" data-nav-link
+              class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">À propos</a></li>
+          <li><a href="services.html" data-nav-link
+              class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Services</a></li>
+          <li><a href="equipe.html" data-nav-link
+              class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Équipe</a></li>
+          <li><a href="contact.html"
+              class="btn btn-primary btn-sm rounded-full px-6 font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
 
