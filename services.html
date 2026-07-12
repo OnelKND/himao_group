@@ -7,10 +7,13 @@
   <title>Services | HIMAO Group</title>
   <link rel="icon" type="image/png" href="/assets/images/favicon.ico" />
   <link rel="stylesheet" href="/css/output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-white text-himao-dark">
+<body class="bg-base-100 text-himao-dark">
 
-  <header class="navbar sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-himao-gold/30 px-4 md:px-8">
+  <header class="navbar sticky top-0 z-50 bg-base-100/95 backdrop-blur-md border-b border-himao-gold/30 px-4 md:px-8 shadow-sm">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden" aria-label="Menu">
@@ -18,129 +21,196 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </label>
-        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] w-52 rounded-box bg-white p-2 shadow">
-          <li><a href="index.html" data-nav-link>Accueil</a></li>
-          <li><a href="a-propos.html" data-nav-link>À propos</a></li>
-          <li><a href="services.html" data-nav-link>Services</a></li>
-          <li><a href="equipe.html" data-nav-link>Équipe</a></li>
-          <li><a href="contact.html" data-nav-link>Contact</a></li>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] w-52 rounded-box bg-base-100 p-2 shadow-xl border border-himao-gold/20">
+          <li><a href="index.html" data-nav-link class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Accueil</a></li>
+          <li><a href="a-propos.html" data-nav-link class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">À propos</a></li>
+          <li><a href="services.html" data-nav-link class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Services</a></li>
+          <li><a href="equipe.html" data-nav-link class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Équipe</a></li>
+          <li><a href="contact.html" data-nav-link class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Contact</a></li>
         </ul>
       </div>
-      <a href="index.html" class="text-xl font-bold text-himao-navy pl-2">
-        HIMAO <span class="text-himao-gold">Group</span>
+      <a href="index.html" class="flex items-center gap-2 pl-2">
+        <img src="/assets/images/logo.png" alt="HIMAO Group" class="h-12 w-auto" />
+        <span class="text-xl font-bold text-himao-navy hidden sm:inline">
+          HIMAO <span class="text-himao-gold">Group</span>
+        </span>
       </a>
     </div>
     <div class="navbar-end hidden lg:flex">
-      <ul class="menu menu-horizontal gap-6 px-1 text-sm font-medium">
-        <li><a href="index.html" data-nav-link class="hover:text-himao-gold">Accueil</a></li>
-        <li><a href="a-propos.html" data-nav-link class="hover:text-himao-gold">À propos</a></li>
-        <li><a href="services.html" data-nav-link class="hover:text-himao-gold">Services</a></li>
-        <li><a href="equipe.html" data-nav-link class="hover:text-himao-gold">Équipe</a></li>
-        <li><a href="contact.html" data-nav-link class="btn btn-sm bg-himao-navy text-white hover:bg-himao-dark border-none">Contact</a></li>
+      <ul class="menu menu-horizontal gap-1 px-1">
+        <li><a href="index.html" data-nav-link class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Accueil</a></li>
+        <li><a href="a-propos.html" data-nav-link class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">À propos</a></li>
+        <li><a href="services.html" data-nav-link class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Services</a></li>
+        <li><a href="equipe.html" data-nav-link class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Équipe</a></li>
+        <li><a href="contact.html" class="btn btn-primary btn-sm rounded-full px-6 font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all">Contact</a></li>
       </ul>
     </div>
   </header>
 
   <main>
-    <!-- ===== DOMAINES ===== -->
-    <section class="bg-himao-light px-4 py-20">
-      <div class="mx-auto max-w-6xl">
-        <div class="mb-12 text-center">
-          <p class="mb-2 text-sm font-semibold uppercase tracking-wider text-himao-gold">Notre expertise</p>
-          <h1 class="text-3xl font-bold text-himao-navy md:text-4xl">Domaines d'activité</h1>
-          <p class="mx-auto mt-3 max-w-2xl text-himao-dark/70">Trois domaines clés pour accompagner efficacement vos objectifs.</p>
+    <!-- Hero Section -->
+    <section class="px-4 py-16 md:py-20 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-base-200 via-base-100 to-base-200/50"></div>
+      <div class="absolute top-10 right-10 w-32 h-32 bg-himao-gold/10 rounded-full blur-2xl"></div>
+      <div class="absolute bottom-10 left-10 w-24 h-24 bg-himao-navy/5 rounded-full blur-2xl"></div>
+
+      <div class="mx-auto max-w-6xl relative z-10">
+        <div class="text-center mb-12">
+          <div class="badge badge-lg bg-secondary/20 text-secondary border-none mb-4 px-4">Ce que nous proposons</div>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-himao-navy mb-4">Nos services</h1>
+          <p class="mx-auto max-w-2xl text-himao-dark/70">Des solutions adaptées pour accompagner efficacement votre croissance.</p>
         </div>
-        <div class="grid gap-6 md:grid-cols-3">
-          <div class="card bg-white shadow-sm border border-himao-navy/10">
+
+        <!-- Domaines -->
+        <div class="grid md:grid-cols-3 gap-8 mb-16">
+          <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-transparent hover:border-secondary/30">
             <div class="card-body">
+              <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
               <h3 class="card-title text-himao-navy text-lg">Commerce et Développement d'affaires</h3>
               <p class="text-sm text-himao-dark/70">Accompagnement des entreprises dans leur croissance commerciale, locale et internationale.</p>
             </div>
           </div>
-          <div class="card bg-white shadow-sm border border-himao-navy/10">
+          <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-transparent hover:border-secondary/30">
             <div class="card-body">
+              <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+              </div>
               <h3 class="card-title text-himao-navy text-lg">Gestion de projets</h3>
               <p class="text-sm text-himao-dark/70">Méthodologies éprouvées pour piloter vos projets du démarrage à la livraison.</p>
             </div>
           </div>
-          <div class="card bg-white shadow-sm border border-himao-navy/10">
+          <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-transparent hover:border-secondary/30">
             <div class="card-body">
+              <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                </svg>
+              </div>
               <h3 class="card-title text-himao-navy text-lg">Infrastructures Informatiques</h3>
               <p class="text-sm text-himao-dark/70">Conception, sécurisation et administration de systèmes d'information robustes.</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ===== SERVICES ===== -->
-    <section class="px-4 py-20">
-      <div class="mx-auto max-w-6xl">
-        <div class="mb-12 text-center">
-          <p class="mb-2 text-sm font-semibold uppercase tracking-wider text-himao-gold">Ce que nous proposons</p>
-          <h2 class="text-3xl font-bold text-himao-navy md:text-4xl">Nos services</h2>
-          <p class="mx-auto mt-3 max-w-2xl text-himao-dark/70">Des solutions adaptées pour accompagner efficacement votre croissance.</p>
-        </div>
+        <!-- Services List -->
         <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <div class="card bg-white shadow-sm border border-himao-navy/10">
+          <div class="card bg-base-200 hover:bg-base-100 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-secondary/20">
             <div class="card-body">
-              <span class="text-3xl mb-2">📊</span>
+              <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                </svg>
+              </div>
               <h3 class="card-title text-himao-navy text-base">Gestion, suivi et évaluation de projet</h3>
               <p class="text-sm text-himao-dark/70">Pilotage complet de vos projets, du cadrage initial jusqu'à l'évaluation des résultats.</p>
             </div>
           </div>
-          <div class="card bg-white shadow-sm border border-himao-navy/10">
+          <div class="card bg-base-200 hover:bg-base-100 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-secondary/20">
             <div class="card-body">
-              <span class="text-3xl mb-2">🖧</span>
+              <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                </svg>
+              </div>
               <h3 class="card-title text-himao-navy text-base">Conception, administration et sécurisation des réseaux</h3>
               <p class="text-sm text-himao-dark/70">Mise en place et sécurisation d'infrastructures réseau adaptées à vos besoins.</p>
             </div>
           </div>
-          <div class="card bg-white shadow-sm border border-himao-navy/10">
+          <div class="card bg-base-200 hover:bg-base-100 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-secondary/20">
             <div class="card-body">
-              <span class="text-3xl mb-2">💡</span>
+              <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
               <h3 class="card-title text-himao-navy text-base">Conseil en transformation numérique</h3>
               <p class="text-sm text-himao-dark/70">Accompagnement stratégique pour digitaliser efficacement vos processus.</p>
             </div>
           </div>
-          <div class="card bg-white shadow-sm border border-himao-navy/10">
+          <div class="card bg-base-200 hover:bg-base-100 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-secondary/20">
             <div class="card-body">
-              <span class="text-3xl mb-2">🌍</span>
+              <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
               <h3 class="card-title text-himao-navy text-base">Accompagnement commercial national et international</h3>
               <p class="text-sm text-himao-dark/70">Appui au développement commercial pour renforcer votre présence sur les marchés.</p>
             </div>
           </div>
-          <div class="card bg-white shadow-sm border border-himao-navy/10">
+          <div class="card bg-base-200 hover:bg-base-100 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-secondary/20">
             <div class="card-body">
-              <span class="text-3xl mb-2">📈</span>
+              <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                </svg>
+              </div>
               <h3 class="card-title text-himao-navy text-base">Étude de marché et stratégie commerciale</h3>
               <p class="text-sm text-himao-dark/70">Analyse de marché approfondie pour orienter vos décisions stratégiques.</p>
             </div>
           </div>
-          <div class="card bg-white shadow-sm border border-himao-navy/10">
+          <div class="card bg-base-200 hover:bg-base-100 hover:shadow-xl transition-all duration-300 border border-transparent hover:border-secondary/20">
             <div class="card-body">
-              <span class="text-3xl mb-2">📱</span>
+              <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-3">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                </svg>
+              </div>
               <h3 class="card-title text-himao-navy text-base">Gestion des réseaux sociaux</h3>
               <p class="text-sm text-himao-dark/70">Création de contenu et animation de votre présence digitale sur les réseaux sociaux.</p>
             </div>
           </div>
         </div>
-        <div class="text-center mt-10">
-          <a href="contact.html" class="btn bg-himao-navy text-white hover:bg-himao-dark border-none">Discuter de votre projet</a>
+
+        <div class="text-center mt-12">
+          <a href="contact.html" class="btn btn-primary btn-lg rounded-full px-8">
+            Discuter de votre projet
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-himao-dark text-white">
-    <div class="mx-auto max-w-6xl px-4 py-8 text-center">
-      <p class="text-lg font-semibold">HIMAO <span class="text-himao-gold">Group</span></p>
-      <p class="mt-1 text-sm italic text-white/70">Notre expertise au service de votre croissance</p>
-      <p class="mt-4 text-sm text-white/80">
-        Cotonou, Bénin &nbsp;|&nbsp; himaogroup@gmail.com &nbsp;|&nbsp;
-        <a href="https://himaogroup.netlify.app" class="underline hover:text-himao-gold" target="_blank" rel="noreferrer">himaogroup.netlify.app</a>
-      </p>
-      <p class="mt-4 text-xs text-white/50">© <span id="current-year"></span> HIMAO Group. Tous droits réservés.</p>
+  <footer class="bg-neutral text-white pt-16 pb-8">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <img src="/assets/images/logo.png" alt="HIMAO Group" class="h-10 w-auto" />
+            <span class="text-lg font-bold">HIMAO <span class="text-secondary">Group</span></span>
+          </div>
+          <p class="text-white/70 text-sm">Notre expertise au service de votre croissance</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-4 text-secondary">Liens rapides</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-white/70 hover:text-secondary transition-colors">Accueil</a></li>
+            <li><a href="a-propos.html" class="text-white/70 hover:text-secondary transition-colors">À propos</a></li>
+            <li><a href="services.html" class="text-white/70 hover:text-secondary transition-colors">Services</a></li>
+            <li><a href="equipe.html" class="text-white/70 hover:text-secondary transition-colors">Équipe</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-4 text-secondary">Contact</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li>Cotonou, Bénin</li>
+            <li><a href="mailto:himaogroup@gmail.com" class="hover:text-secondary">himaogroup@gmail.com</a></li>
+            <li><a href="https://himaogroup.netlify.app" target="_blank" class="hover:text-secondary">himaogroup.netlify.app</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-white/10 text-center">
+        <p class="text-xs text-white/50">© <span id="current-year"></span> HIMAO Group. Tous droits réservés.</p>
+      </div>
     </div>
   </footer>
 

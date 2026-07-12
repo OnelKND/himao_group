@@ -7,10 +7,13 @@
   <title>Équipe | HIMAO Group</title>
   <link rel="icon" type="image/png" href="/assets/images/favicon.ico" />
   <link rel="stylesheet" href="/css/output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-white text-himao-dark">
+<body class="bg-base-100 text-himao-dark">
 
-  <header class="navbar sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-himao-gold/30 px-4 md:px-8">
+  <header class="navbar sticky top-0 z-50 bg-base-100/95 backdrop-blur-md border-b border-himao-gold/30 px-4 md:px-8 shadow-sm">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden" aria-label="Menu">
@@ -18,122 +21,173 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </label>
-        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] w-52 rounded-box bg-white p-2 shadow">
-          <li><a href="index.html" data-nav-link>Accueil</a></li>
-          <li><a href="a-propos.html" data-nav-link>À propos</a></li>
-          <li><a href="services.html" data-nav-link>Services</a></li>
-          <li><a href="equipe.html" data-nav-link>Équipe</a></li>
-          <li><a href="contact.html" data-nav-link>Contact</a></li>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] w-52 rounded-box bg-base-100 p-2 shadow-xl border border-himao-gold/20">
+          <li><a href="index.html" data-nav-link class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Accueil</a></li>
+          <li><a href="a-propos.html" data-nav-link class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">À propos</a></li>
+          <li><a href="services.html" data-nav-link class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Services</a></li>
+          <li><a href="equipe.html" data-nav-link class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Équipe</a></li>
+          <li><a href="contact.html" data-nav-link class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Contact</a></li>
         </ul>
       </div>
-      <a href="index.html" class="text-xl font-bold text-himao-navy pl-2">
-        HIMAO <span class="text-himao-gold">Group</span>
+      <a href="index.html" class="flex items-center gap-2 pl-2">
+        <img src="/assets/images/logo.png" alt="HIMAO Group" class="h-12 w-auto" />
+        <span class="text-xl font-bold text-himao-navy hidden sm:inline">
+          HIMAO <span class="text-himao-gold">Group</span>
+        </span>
       </a>
     </div>
     <div class="navbar-end hidden lg:flex">
-      <ul class="menu menu-horizontal gap-6 px-1 text-sm font-medium">
-        <li><a href="index.html" data-nav-link class="hover:text-himao-gold">Accueil</a></li>
-        <li><a href="a-propos.html" data-nav-link class="hover:text-himao-gold">À propos</a></li>
-        <li><a href="services.html" data-nav-link class="hover:text-himao-gold">Services</a></li>
-        <li><a href="equipe.html" data-nav-link class="hover:text-himao-gold">Équipe</a></li>
-        <li><a href="contact.html" data-nav-link class="btn btn-sm bg-himao-navy text-white hover:bg-himao-dark border-none">Contact</a></li>
+      <ul class="menu menu-horizontal gap-1 px-1">
+        <li><a href="index.html" data-nav-link class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Accueil</a></li>
+        <li><a href="a-propos.html" data-nav-link class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">À propos</a></li>
+        <li><a href="services.html" data-nav-link class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Services</a></li>
+        <li><a href="equipe.html" data-nav-link class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Équipe</a></li>
+        <li><a href="contact.html" class="btn btn-primary btn-sm rounded-full px-6 font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all">Contact</a></li>
       </ul>
     </div>
   </header>
 
   <main>
-    <section class="px-4 py-20">
-      <div class="mx-auto max-w-6xl">
-        <div class="mb-12 text-center">
-          <p class="mb-2 text-sm font-semibold uppercase tracking-wider text-himao-gold">L'équipe</p>
-          <h1 class="text-3xl font-bold text-himao-navy md:text-4xl">Notre organigramme</h1>
-          <p class="mx-auto mt-3 max-w-2xl text-himao-dark/70">Cinq membres, une même ambition : accompagner votre croissance.</p>
+    <!-- Hero Section -->
+    <section class="px-4 py-16 md:py-20 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-base-200 via-base-100 to-base-200/50"></div>
+      <div class="absolute top-10 right-10 w-32 h-32 bg-himao-gold/10 rounded-full blur-2xl"></div>
+      <div class="absolute bottom-10 left-10 w-24 h-24 bg-himao-navy/5 rounded-full blur-2xl"></div>
+
+      <div class="mx-auto max-w-6xl relative z-10">
+        <div class="text-center mb-12">
+          <div class="badge badge-lg bg-secondary/20 text-secondary border-none mb-4 px-4">Notre équipe</div>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-himao-navy mb-4">Notre organigramme</h1>
+          <p class="mx-auto max-w-2xl text-himao-dark/70">Cinq membres, une même ambition : accompagner votre croissance.</p>
         </div>
 
-        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <!-- OSSENI Hamdiyath -->
-          <div class="card bg-white shadow-sm border border-himao-navy/10 text-center">
-            <div class="card-body items-center">
-              <div class="avatar placeholder mb-2">
-                <div class="bg-himao-light text-himao-navy rounded-full w-24">
+        <!-- Directrice -->
+        <div class="flex justify-center mb-12">
+          <div class="card bg-base-100 shadow-2xl hover:shadow-3xl transition-all duration-300 border-l-4 border-secondary w-full max-w-md">
+            <div class="card-body items-center text-center">
+              <div class="avatar mb-4">
+                <div class="w-32 rounded-full ring ring-secondary ring-offset-2 ring-offset-base-100">
                   <img src="/assets/images/team/osseni-hamdiyath.jpg" alt="OSSENI Hamdiyath" onerror="this.style.display='none'" />
                 </div>
               </div>
-              <h3 class="font-semibold text-himao-navy">OSSENI Hamdiyath</h3>
-              <p class="text-sm text-himao-gold">Directrice de l'agence</p>
-              <p class="text-xs text-himao-dark/60">Commerce International et E-business</p>
+              <h3 class="font-bold text-xl text-himao-navy">OSSENI Hamdiyath</h3>
+              <div class="badge badge-secondary badge-lg mt-2">Directrice de l'agence</div>
+              <p class="text-sm text-himao-dark/60 mt-2">Commerce International et E-business</p>
             </div>
           </div>
+        </div>
 
+        <!-- Responsables -->
+        <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 max-w-5xl mx-auto">
           <!-- ADANHOUME Ange -->
-          <div class="card bg-white shadow-sm border border-himao-navy/10 text-center">
-            <div class="card-body items-center">
-              <div class="avatar placeholder mb-2">
-                <div class="bg-himao-light text-himao-navy rounded-full w-24">
+          <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-transparent hover:border-primary/30">
+            <div class="card-body items-center text-center">
+              <div class="avatar mb-3">
+                <div class="w-24 rounded-full">
                   <img src="/assets/images/team/adanhoume-ange.jpg" alt="ADANHOUME Ange" onerror="this.style.display='none'" />
                 </div>
               </div>
               <h3 class="font-semibold text-himao-navy">ADANHOUME Ange</h3>
-              <p class="text-sm text-himao-gold">Responsable Administratif et Financier</p>
-              <p class="text-xs text-himao-dark/60">Entrepreneuriat et Gestion de Projet</p>
+              <div class="badge badge-primary badge-sm mt-2">Responsable Administratif et Financier</div>
+              <p class="text-xs text-himao-dark/60 mt-2">Entrepreneuriat et Gestion de Projet</p>
             </div>
           </div>
 
           <!-- BANKOLE Murielle -->
-          <div class="card bg-white shadow-sm border border-himao-navy/10 text-center">
-            <div class="card-body items-center">
-              <div class="avatar placeholder mb-2">
-                <div class="bg-himao-light text-himao-navy rounded-full w-24">
+          <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-transparent hover:border-primary/30">
+            <div class="card-body items-center text-center">
+              <div class="avatar mb-3">
+                <div class="w-24 rounded-full">
                   <img src="/assets/images/team/bankole-murielle.jpg" alt="BANKOLE Murielle" onerror="this.style.display='none'" />
                 </div>
               </div>
               <h3 class="font-semibold text-himao-navy">BANKOLE Murielle</h3>
-              <p class="text-sm text-himao-gold">Responsable Communication et identité visuelle</p>
-              <p class="text-xs text-himao-dark/60">Réseaux Informatique, Mobilité et Sécurité</p>
-            </div>
-          </div>
-
-          <!-- ATCHADE Paule-Inès -->
-          <div class="card bg-white shadow-sm border border-himao-navy/10 text-center">
-            <div class="card-body items-center">
-              <div class="avatar placeholder mb-2">
-                <div class="bg-himao-light text-himao-navy rounded-full w-24">
-                  <img src="/assets/images/team/atchade-paule-ines.jpg" alt="ATCHADE Paule-Inès" onerror="this.style.display='none'" />
-                </div>
-              </div>
-              <h3 class="font-semibold text-himao-navy">ATCHADE Paule-Inès</h3>
-              <p class="text-sm text-himao-gold">Responsable adjointe communication</p>
-              <p class="text-xs text-himao-dark/60">Réseaux Informatique, Mobilité et Sécurité</p>
+              <div class="badge badge-primary badge-sm mt-2">Responsable Communication</div>
+              <p class="text-xs text-himao-dark/60 mt-2">Réseaux Informatique, Mobilité et Sécurité</p>
             </div>
           </div>
 
           <!-- KOUNDE Ange-Onel -->
-          <div class="card bg-white shadow-sm border border-himao-navy/10 text-center">
-            <div class="card-body items-center">
-              <div class="avatar placeholder mb-2">
-                <div class="bg-himao-light text-himao-navy rounded-full w-24">
+          <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-transparent hover:border-primary/30">
+            <div class="card-body items-center text-center">
+              <div class="avatar mb-3">
+                <div class="w-24 rounded-full">
                   <img src="/assets/images/team/kounde-ange-onel.jpg" alt="KOUNDE Ange-Onel" onerror="this.style.display='none'" />
                 </div>
               </div>
               <h3 class="font-semibold text-himao-navy">KOUNDE Ange-Onel</h3>
-              <p class="text-sm text-himao-gold">Responsable Technique</p>
-              <p class="text-xs text-himao-dark/60">Réseaux et Génie Logiciel</p>
+              <div class="badge badge-primary badge-sm mt-2">Responsable Technique</div>
+              <p class="text-xs text-himao-dark/60 mt-2">Réseaux et Génie Logiciel</p>
             </div>
+          </div>
+
+          <!-- ATCHADE Paule-Inès -->
+          <div class="card bg-base-100 shadow-xl hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-transparent hover:border-primary/30">
+            <div class="card-body items-center text-center">
+              <div class="avatar mb-3">
+                <div class="w-24 rounded-full">
+                  <img src="/assets/images/team/atchade-paule-ines.jpg" alt="ATCHADE Paule-Inès" onerror="this.style.display='none'" />
+                </div>
+              </div>
+              <h3 class="font-semibold text-himao-navy">ATCHADE Paule-Inès</h3>
+              <div class="badge badge-primary badge-sm mt-2">Responsable adjointe communication</div>
+              <p class="text-xs text-himao-dark/60 mt-2">Réseaux Informatique, Mobilité et Sécurité</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="px-4 py-16 bg-base-200">
+      <div class="mx-auto max-w-3xl text-center">
+        <div class="card bg-base-100 shadow-xl p-8 rounded-3xl">
+          <h2 class="text-2xl font-bold text-himao-navy mb-4">Vous voulez travailler avec nous ?</h2>
+          <p class="text-himao-dark/70 mb-6">Contactez notre équipe pour discuter de vos projets.</p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <a href="contact.html" class="btn btn-primary rounded-full">
+              Nous contacter
+            </a>
+            <a href="a-propos.html" class="btn btn-outline rounded-full">
+              En savoir plus
+            </a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-himao-dark text-white">
-    <div class="mx-auto max-w-6xl px-4 py-8 text-center">
-      <p class="text-lg font-semibold">HIMAO <span class="text-himao-gold">Group</span></p>
-      <p class="mt-1 text-sm italic text-white/70">Notre expertise au service de votre croissance</p>
-      <p class="mt-4 text-sm text-white/80">
-        Cotonou, Bénin &nbsp;|&nbsp; himaogroup@gmail.com &nbsp;|&nbsp;
-        <a href="https://himaogroup.netlify.app" class="underline hover:text-himao-gold" target="_blank" rel="noreferrer">himaogroup.netlify.app</a>
-      </p>
-      <p class="mt-4 text-xs text-white/50">© <span id="current-year"></span> HIMAO Group. Tous droits réservés.</p>
+  <footer class="bg-neutral text-white pt-16 pb-8">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <img src="/assets/images/logo.png" alt="HIMAO Group" class="h-10 w-auto" />
+            <span class="text-lg font-bold">HIMAO <span class="text-secondary">Group</span></span>
+          </div>
+          <p class="text-white/70 text-sm">Notre expertise au service de votre croissance</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-4 text-secondary">Liens rapides</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-white/70 hover:text-secondary transition-colors">Accueil</a></li>
+            <li><a href="a-propos.html" class="text-white/70 hover:text-secondary transition-colors">À propos</a></li>
+            <li><a href="services.html" class="text-white/70 hover:text-secondary transition-colors">Services</a></li>
+            <li><a href="equipe.html" class="text-white/70 hover:text-secondary transition-colors">Équipe</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-4 text-secondary">Contact</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li>Cotonou, Bénin</li>
+            <li><a href="mailto:himaogroup@gmail.com" class="hover:text-secondary">himaogroup@gmail.com</a></li>
+            <li><a href="https://himaogroup.netlify.app" target="_blank" class="hover:text-secondary">himaogroup.netlify.app</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-white/10 text-center">
+        <p class="text-xs text-white/50">© <span id="current-year"></span> HIMAO Group. Tous droits réservés.</p>
+      </div>
     </div>
   </footer>
 

@@ -7,10 +7,13 @@
   <title>Contact | HIMAO Group</title>
   <link rel="icon" type="image/png" href="/assets/images/favicon.ico" />
   <link rel="stylesheet" href="/css/output.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body class="bg-white text-himao-dark">
+<body class="bg-base-100 text-himao-dark">
 
-  <header class="navbar sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-himao-gold/30 px-4 md:px-8">
+  <header class="navbar sticky top-0 z-50 bg-base-100/95 backdrop-blur-md border-b border-himao-gold/30 px-4 md:px-8 shadow-sm">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden" aria-label="Menu">
@@ -18,109 +21,218 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </label>
-        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] w-52 rounded-box bg-white p-2 shadow">
-          <li><a href="index.html" data-nav-link>Accueil</a></li>
-          <li><a href="a-propos.html" data-nav-link>À propos</a></li>
-          <li><a href="services.html" data-nav-link>Services</a></li>
-          <li><a href="equipe.html" data-nav-link>Équipe</a></li>
-          <li><a href="contact.html" data-nav-link>Contact</a></li>
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] w-52 rounded-box bg-base-100 p-2 shadow-xl border border-himao-gold/20">
+          <li><a href="index.html" data-nav-link class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Accueil</a></li>
+          <li><a href="a-propos.html" data-nav-link class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">À propos</a></li>
+          <li><a href="services.html" data-nav-link class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Services</a></li>
+          <li><a href="equipe.html" data-nav-link class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Équipe</a></li>
+          <li><a href="contact.html" data-nav-link class="font-medium hover:bg-himao-light hover:text-himao-navy rounded-lg transition-colors">Contact</a></li>
         </ul>
       </div>
-      <a href="index.html" class="text-xl font-bold text-himao-navy pl-2">
-        HIMAO <span class="text-himao-gold">Group</span>
+      <a href="index.html" class="flex items-center gap-2 pl-2">
+        <img src="/assets/images/logo.png" alt="HIMAO Group" class="h-12 w-auto" />
+        <span class="text-xl font-bold text-himao-navy hidden sm:inline">
+          HIMAO <span class="text-himao-gold">Group</span>
+        </span>
       </a>
     </div>
     <div class="navbar-end hidden lg:flex">
-      <ul class="menu menu-horizontal gap-6 px-1 text-sm font-medium">
-        <li><a href="index.html" data-nav-link class="hover:text-himao-gold">Accueil</a></li>
-        <li><a href="a-propos.html" data-nav-link class="hover:text-himao-gold">À propos</a></li>
-        <li><a href="services.html" data-nav-link class="hover:text-himao-gold">Services</a></li>
-        <li><a href="equipe.html" data-nav-link class="hover:text-himao-gold">Équipe</a></li>
-        <li><a href="contact.html" data-nav-link class="btn btn-sm bg-himao-navy text-white hover:bg-himao-dark border-none">Contact</a></li>
+      <ul class="menu menu-horizontal gap-1 px-1">
+        <li><a href="index.html" data-nav-link class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Accueil</a></li>
+        <li><a href="a-propos.html" data-nav-link class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">À propos</a></li>
+        <li><a href="services.html" data-nav-link class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Services</a></li>
+        <li><a href="equipe.html" data-nav-link class="nav-link px-4 py-2 rounded-lg font-medium transition-all hover:text-himao-gold">Équipe</a></li>
+        <li><a href="contact.html" class="btn btn-primary btn-sm rounded-full px-6 font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all">Contact</a></li>
       </ul>
     </div>
   </header>
 
   <main>
-    <section class="px-4 py-20">
-      <div class="mx-auto max-w-6xl">
+    <section class="px-4 py-16 md:py-20 relative overflow-hidden">
+      <div class="absolute inset-0 bg-gradient-to-br from-base-200 via-base-100 to-base-200/50"></div>
+      <div class="absolute top-10 right-10 w-32 h-32 bg-himao-gold/10 rounded-full blur-2xl"></div>
+      <div class="absolute bottom-10 left-10 w-24 h-24 bg-himao-navy/5 rounded-full blur-2xl"></div>
+
+      <div class="mx-auto max-w-6xl relative z-10">
         <div class="mb-12 text-center">
-          <p class="mb-2 text-sm font-semibold uppercase tracking-wider text-himao-gold">Parlons-en</p>
-          <h1 class="text-3xl font-bold text-himao-navy md:text-4xl">Contactez-nous</h1>
-          <p class="mx-auto mt-3 max-w-2xl text-himao-dark/70">
+          <div class="badge badge-lg bg-secondary/20 text-secondary border-none mb-4 px-4">Parlons-en</div>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-himao-navy mb-4">Contactez-nous</h1>
+          <p class="mx-auto max-w-2xl text-himao-dark/70">
             Une question, un projet ? Écrivez-nous, notre équipe vous répond rapidement.
           </p>
         </div>
 
-        <!--
-          Formulaire branché sur Netlify Forms.
-          - data-netlify="true" active la capture côté Netlify (aucun backend à gérer)
-          - le champ caché "bot-field" est un honeypot anti-spam :
-            invisible pour un humain, mais un bot le remplit -> soumission rejetée
-        -->
-        <form
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          class="mx-auto max-w-xl space-y-4"
-          id="contact-form"
-        >
-          <input type="hidden" name="form-name" value="contact" />
+        <div class="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <!-- Contact Info -->
+          <div class="space-y-6">
+            <div class="card bg-base-100 shadow-xl">
+              <div class="card-body">
+                <h2 class="card-title text-himao-navy mb-4">Nos coordonnées</h2>
+                <div class="space-y-4">
+                  <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="font-semibold text-himao-navy">Adresse</p>
+                      <p class="text-sm text-himao-dark/70">Cotonou, Bénin</p>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="font-semibold text-himao-navy">Email</p>
+                      <a href="mailto:himaogroup@gmail.com" class="text-sm text-himao-dark/70 hover:text-secondary">himaogroup@gmail.com</a>
+                    </div>
+                  </div>
+                  <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                      </svg>
+                    </div>
+                    <div>
+                      <p class="font-semibold text-himao-navy">Site web</p>
+                      <a href="https://himaogroup.netlify.app" target="_blank" class="text-sm text-himao-dark/70 hover:text-secondary">himaogroup.netlify.app</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-          <p class="hidden">
-            <label>
-              Ne pas remplir si vous êtes humain : <input name="bot-field" />
-            </label>
-          </p>
-
-          <div class="form-control">
-            <label class="label">
-              <span class="label-text">Nom complet</span>
-            </label>
-            <input type="text" name="name" required class="input input-bordered focus:border-himao-gold" />
+            <div class="card bg-primary text-primary-content shadow-xl">
+              <div class="card-body">
+                <h2 class="card-title">Pourquoi nous contacter ?</h2>
+                <ul class="space-y-2 text-sm">
+                  <li class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Demande de devis pour un projet
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Questions sur nos services
+                  </li>
+                  <li class="flex items-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                    Partenariats et collaborations
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
 
-          <div class="form-control">
-            <label class="label">
-              <span class="label-text">Email</span>
-            </label>
-            <input type="email" name="email" required class="input input-bordered focus:border-himao-gold" />
+          <!-- Contact Form -->
+          <div class="card bg-base-100 shadow-2xl">
+            <div class="card-body">
+              <h2 class="card-title text-himao-navy mb-4">Envoyez-nous un message</h2>
+
+              <!--
+                Formulaire branché sur Netlify Forms.
+                - data-netlify="true" active la capture côté Netlify
+                - le champ caché "bot-field" est un honeypot anti-spam
+              -->
+              <form
+                name="contact"
+                method="POST"
+                data-netlify="true"
+                data-netlify-honeypot="bot-field"
+                class="space-y-4"
+                id="contact-form"
+              >
+                <input type="hidden" name="form-name" value="contact" />
+
+                <p class="hidden">
+                  <label>
+                    Ne pas remplir si vous êtes humain : <input name="bot-field" />
+                  </label>
+                </p>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-medium">Nom complet</span>
+                  </label>
+                  <input type="text" name="name" required class="input input-bordered focus:border-secondary focus:ring-2 focus:ring-secondary/20" placeholder="Votre nom" />
+                </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-medium">Email</span>
+                  </label>
+                  <input type="email" name="email" required class="input input-bordered focus:border-secondary focus:ring-2 focus:ring-secondary/20" placeholder="votre@email.com" />
+                </div>
+
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-medium">Message</span>
+                  </label>
+                  <textarea name="message" rows="5" required class="textarea textarea-bordered focus:border-secondary focus:ring-2 focus:ring-secondary/20" placeholder="Décrivez votre projet ou posez votre question..."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-full rounded-xl">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-8-4-8 4 9-2zm0 0v-8" />
+                  </svg>
+                  Envoyer le message
+                </button>
+
+                <p id="form-success" class="hidden alert alert-success">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                  <span>Message envoyé ! Nous vous répondrons dans les plus brefs délais.</span>
+                </p>
+              </form>
+            </div>
           </div>
-
-          <div class="form-control">
-            <label class="label">
-              <span class="label-text">Message</span>
-            </label>
-            <textarea name="message" rows="5" required class="textarea textarea-bordered focus:border-himao-gold"></textarea>
-          </div>
-
-          <button type="submit" class="btn w-full bg-himao-navy text-white hover:bg-himao-dark border-none">
-            Envoyer le message
-          </button>
-
-          <p id="form-success" class="hidden rounded-lg bg-himao-light p-4 text-center text-sm text-himao-navy">
-            Message envoyé ! Nous vous répondrons dans les plus brefs délais.
-          </p>
-        </form>
-
-        <div class="mt-12 text-center text-sm text-himao-dark/70">
-          <p>Cotonou, Bénin</p>
-          <p>himaogroup@gmail.com</p>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="bg-himao-dark text-white">
-    <div class="mx-auto max-w-6xl px-4 py-8 text-center">
-      <p class="text-lg font-semibold">HIMAO <span class="text-himao-gold">Group</span></p>
-      <p class="mt-1 text-sm italic text-white/70">Notre expertise au service de votre croissance</p>
-      <p class="mt-4 text-sm text-white/80">
-        Cotonou, Bénin &nbsp;|&nbsp; himaogroup@gmail.com &nbsp;|&nbsp;
-        <a href="https://himaogroup.netlify.app" class="underline hover:text-himao-gold" target="_blank" rel="noreferrer">himaogroup.netlify.app</a>
-      </p>
-      <p class="mt-4 text-xs text-white/50">© <span id="current-year"></span> HIMAO Group. Tous droits réservés.</p>
+  <footer class="bg-neutral text-white pt-16 pb-8">
+    <div class="mx-auto max-w-6xl px-4">
+      <div class="grid md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <div class="flex items-center gap-2 mb-4">
+            <img src="/assets/images/logo.png" alt="HIMAO Group" class="h-10 w-auto" />
+            <span class="text-lg font-bold">HIMAO <span class="text-secondary">Group</span></span>
+          </div>
+          <p class="text-white/70 text-sm">Notre expertise au service de votre croissance</p>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-4 text-secondary">Liens rapides</h4>
+          <ul class="space-y-2 text-sm">
+            <li><a href="index.html" class="text-white/70 hover:text-secondary transition-colors">Accueil</a></li>
+            <li><a href="a-propos.html" class="text-white/70 hover:text-secondary transition-colors">À propos</a></li>
+            <li><a href="services.html" class="text-white/70 hover:text-secondary transition-colors">Services</a></li>
+            <li><a href="equipe.html" class="text-white/70 hover:text-secondary transition-colors">Équipe</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-bold text-lg mb-4 text-secondary">Contact</h4>
+          <ul class="space-y-2 text-sm text-white/70">
+            <li>Cotonou, Bénin</li>
+            <li><a href="mailto:himaogroup@gmail.com" class="hover:text-secondary">himaogroup@gmail.com</a></li>
+            <li><a href="https://himaogroup.netlify.app" target="_blank" class="hover:text-secondary">himaogroup.netlify.app</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="pt-8 border-t border-white/10 text-center">
+        <p class="text-xs text-white/50">© <span id="current-year"></span> HIMAO Group. Tous droits réservés.</p>
+      </div>
     </div>
   </footer>
 
