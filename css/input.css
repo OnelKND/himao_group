@@ -79,6 +79,25 @@ body {
   }
 }
 
+/* Aiguille de boussole qui cherche sa direction (page 404) */
+@keyframes compass-search {
+  0%, 100% {
+    transform: rotate(-25deg);
+  }
+  50% {
+    transform: rotate(35deg);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* Animation classes */
 .animate-fade-in {
   animation: fade-in 0.8s ease-out forwards;
@@ -108,6 +127,15 @@ body {
 
 .animate-pulse-glow {
   animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-compass-search {
+  animation: compass-search 2.6s ease-in-out infinite;
+  transform-origin: 50% 60%;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 12s linear infinite;
 }
 
 /* Navbar link styling */
