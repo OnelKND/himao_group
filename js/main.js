@@ -9,13 +9,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Année dynamique dans le footer
+  // Année dynamique dans le footer au niveau de tous droits reservés là
   const yearEl = document.getElementById("current-year");
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
 
-  // Affiche un message de succès après soumission du formulaire Netlify
+  // Affiche un message de succès après soumission du form Netlify
   const contactForm = document.getElementById("contact-form");
   if (contactForm) {
     contactForm.addEventListener("submit", (e) => {
@@ -32,7 +32,10 @@ document.addEventListener("DOMContentLoaded", () => {
           contactForm.classList.add("hidden");
           document.getElementById("form-success").classList.remove("hidden");
         })
-        .catch((error) => console.error("Erreur d'envoi du formulaire :", error));
+        .catch((error) => {
+          console.error("Erreur d'envoi du formulaire :", error);
+          alert("Une erreur est survenue. Merci de réessayer ou de nous écrire directement à himaogroup@gmail.com.");
+        });
     });
   }
 });
