@@ -4135,6 +4135,17 @@ body {
   overflow-x: hidden;
 }
 
+/* Les enfants directs d'une grid/flex refusent par défaut de rétrécir sous
+   la largeur minimale de leur contenu (min-width: auto), ce qui force
+   parfois toute la ligne à déborder sur mobile. On autorise le rétrécissement
+   par défaut ; les éléments qui ont besoin d'une largeur fixe (icônes avec
+   flex-shrink-0, etc.) ne sont pas affectés par ce changement. */
+
+.grid > *,
+.flex > * {
+  min-width: 0;
+}
+
 /* Petit utilitaire pour le lien actif de la navbar */
 
 .nav-active {
