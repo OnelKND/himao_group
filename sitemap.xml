@@ -48,4 +48,8 @@
     <loc>https://himaogroup.netlify.app/blog-erreurs-export-pme.html</loc>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://himaogroup.netlify.app/blog-infrastructure-informatique.html</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>
