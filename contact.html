@@ -110,7 +110,7 @@
 
         <div class="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto">
           <!-- Contact Info -->
-          <div class="space-y-6">
+          <div class="space-y-6 min-w-0">
             <div class="card bg-base-100 shadow-xl">
               <div class="card-body">
                 <h2 class="card-title text-himao-navy mb-4">Nos coordonnées</h2>
@@ -193,8 +193,8 @@
           </div>
 
           <!-- Contact Form -->
-          <div class="card bg-base-100 shadow-2xl">
-            <div class="card-body">
+          <div class="card bg-base-100 shadow-2xl min-w-0">
+            <div class="card-body min-w-0">
               <h2 class="card-title text-himao-navy mb-4">Envoyez-nous un message</h2>
 
               <!--
@@ -203,7 +203,7 @@
                 - le champ caché "bot-field" est un honeypot anti-spam
               -->
               <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field"
-                enctype="multipart/form-data" class="space-y-4" id="contact-form">
+                enctype="multipart/form-data" class="space-y-4 w-full min-w-0" id="contact-form">
                 <input type="hidden" name="form-name" value="contact" />
 
                 <p class="hidden">
@@ -212,39 +212,39 @@
                   </label>
                 </p>
 
-                <div class="form-control">
+                <div class="form-control w-full min-w-0">
                   <label class="label">
                     <span class="label-text font-medium">Nom complet</span>
                   </label>
                   <input type="text" name="name" required
-                    class="input input-bordered focus:border-secondary focus:ring-2 focus:ring-secondary/20"
+                    class="input input-bordered w-full min-w-0 focus:border-secondary focus:ring-2 focus:ring-secondary/20"
                     placeholder="Votre nom" />
                 </div>
 
-                <div class="form-control">
+                <div class="form-control w-full min-w-0">
                   <label class="label">
                     <span class="label-text font-medium">Email</span>
                   </label>
                   <input type="email" name="email" required
-                    class="input input-bordered focus:border-secondary focus:ring-2 focus:ring-secondary/20"
+                    class="input input-bordered w-full min-w-0 focus:border-secondary focus:ring-2 focus:ring-secondary/20"
                     placeholder="votre@email.com" />
                 </div>
 
-                <div class="form-control">
+                <div class="form-control w-full min-w-0">
                   <label class="label">
                     <span class="label-text font-medium">Message</span>
                   </label>
                   <textarea name="message" rows="5" required
-                    class="textarea textarea-bordered focus:border-secondary focus:ring-2 focus:ring-secondary/20"
+                    class="textarea textarea-bordered w-full min-w-0 focus:border-secondary focus:ring-2 focus:ring-secondary/20"
                     placeholder="Décrivez votre projet ou posez votre question..."></textarea>
                 </div>
 
-                <div class="form-control">
+                <div class="form-control w-full min-w-0">
                   <label class="label">
                     <span class="label-text font-medium">Résultat d'un diagnostic (optionnel)</span>
                   </label>
                   <input type="file" name="resultat_diagnostic" accept="application/pdf"
-                    class="file-input file-input-bordered focus:border-secondary focus:ring-2 focus:ring-secondary/20" />
+                    class="file-input file-input-bordered w-full min-w-0 focus:border-secondary focus:ring-2 focus:ring-secondary/20" />
                   <label class="label">
                     <span class="label-text-alt text-himao-dark/60">
                       Si vous avez fait un de nos diagnostics gratuits, joignez ici le PDF téléchargé/imprimé de
